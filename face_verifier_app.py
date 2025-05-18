@@ -75,7 +75,7 @@ class FaceVerifier:
         with torch.no_grad():
             embedding = self.model(face)
         return embedding.cpu().numpy()
-    def verify(self, img1_path, img2_path, threshold=0.7):
+    def verify(self, img1_path, img2_path, threshold=0.75):
         emb1 = self.get_embedding(img1_path)
         emb2 = self.get_embedding(img2_path)
         if emb1 is None or emb2 is None:
