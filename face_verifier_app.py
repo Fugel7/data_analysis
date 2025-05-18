@@ -7,7 +7,7 @@ import os
 from torchvision import transforms
 from sklearn.metrics.pairwise import cosine_similarity
 
-MODEL_PATH = 'face_verifier_model.pth'
+MODEL_PATH = 'face_verifier_model_last.pth'
 
 # ====== FaceNet и FaceVerifier ======
 class FaceNet(nn.Module):
